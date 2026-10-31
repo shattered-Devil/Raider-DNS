@@ -1,0 +1,16 @@
+Raider DNS 0.1.7 — Installation notes
+Copyright (C) 2026 Nima Zahedi
+
+Raider DNS manages Windows DNS settings and can optionally use DNSCrypt Proxy.
+DNSCrypt Proxy is optional and selected by default in the installer. Standard DNS,
+Windows-native DoH, and Windows-native DoT do not require the DNSCrypt engine.
+
+The installer does not change adapter DNS settings during installation. Before
+uninstalling, open Raider DNS, restore the saved DNS settings, stop DNSCrypt Proxy
+only after confirming no adapter relies on loopback DNS, and gracefully stop any
+active sing-box TUN tunnel. If TUN shutdown cannot be confirmed, keep the app open
+and use Diagnostics rather than force-killing the engine.
+
+The application is copyrighted by Nima Zahedi. The application-level license has
+not yet been selected. See LICENSE_STATUS.md and the third-party notices for the
+separate licensing terms of bundled components.
