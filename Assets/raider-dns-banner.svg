@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="420" viewBox="0 0 1500 420" role="img" aria-labelledby="title desc">
+<title id="title">Raider DNS</title><desc id="desc">Windows DNS management and network diagnostics</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1624"/><stop offset="1" stop-color="#102e3a"/></linearGradient>
+  <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#63f3df"/><stop offset="1" stop-color="#16b9a9"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#1fdac2" stop-opacity=".24"/><stop offset="1" stop-color="#1fdac2" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1500" height="420" rx="32" fill="url(#bg)"/>
+<circle cx="1220" cy="85" r="350" fill="url(#glow)"/>
+<path d="M0 338 C270 270 390 410 650 320 S1040 230 1500 300" fill="none" stroke="#2de0ca" stroke-opacity=".12" stroke-width="2"/>
+<path d="M0 365 C280 290 430 420 700 335 S1080 245 1500 322" fill="none" stroke="#53e8d5" stroke-opacity=".10" stroke-width="2"/>
+<g transform="translate(145 82)">
+ <rect x="0" y="0" width="250" height="250" rx="56" fill="#142b3b" stroke="#2e5966" stroke-width="5"/>
+ <path d="M125 25 205 70 205 165 125 212 45 165 45 70Z" fill="none" stroke="#2e5966" stroke-width="6"/>
+ <path d="M75 85 125 56 175 85 175 145 125 174 75 145Z" fill="none" stroke="url(#a)" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M99 88h35c20 0 31 11 31 27 0 12-7 21-18 25l20 30h-26l-17-27h-7v27H99Zm23 18v19h12c7 0 11-3 11-10s-4-9-11-9Z" fill="#effffc"/>
+ <circle cx="190" cy="190" r="18" fill="#21cbb9" stroke="#0d1824" stroke-width="6"/>
+ <path d="m182 190 6 6 11-13" fill="none" stroke="#07151e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g font-family="Segoe UI, Arial, sans-serif" fill="#f1fbff">
+ <text x="465" y="188" font-size="76" font-weight="700" letter-spacing="1">Raider DNS</text>
+ <text x="470" y="246" font-size="28" fill="#9ebbc6">Windows DNS Management &amp; Network Diagnostics</text>
+ <text x="470" y="310" font-size="20" fill="#56d9c9" letter-spacing="4">ENCRYPTED DNS  ·  DIAGNOSTICS  ·  RECOVERY</text>
+</g>
+<text x="1320" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#7696a2" text-anchor="end">v0.1.7 · Release Candidate</text>
+</svg>
