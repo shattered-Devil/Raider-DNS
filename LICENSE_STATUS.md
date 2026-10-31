@@ -95,7 +95,11 @@ This license shall be interpreted and enforced according to the applicable
 laws of the jurisdiction of the Author, except where applicable law requires
 otherwise.
 
-11. CONTACT / PROJECT IDENTITY
+11. DNSCrypt Proxy
+
+If DNSCrypt Proxy is distributed with Raider DNS, preserve its upstream license and copyright notices with the installed component. Verify the license file from the exact official release archive used to build the installer. Do not treat DNSCrypt Proxy's license as the license for Raider DNS itself.
+
+12. CONTACT / PROJECT IDENTITY
 
 Author:
 Nima Zahedi
