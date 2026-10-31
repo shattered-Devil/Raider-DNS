@@ -18,7 +18,13 @@
 </div>
 
 ---
+## Application Screenshots
 
+### Dashboard
+![Raider DNS Dashboard](Assets/Screenshots/dashboard.png)
+
+### Connections
+![Raider DNS Connections](Assets/Screenshots/connections.png)
 ## About
 
 **Raider DNS** is a Windows desktop application for managing DNS configuration, encrypted DNS transports, resolver performance, network diagnostics, and DNS recovery. It is built with Python and PySide6 / Qt Widgets.
