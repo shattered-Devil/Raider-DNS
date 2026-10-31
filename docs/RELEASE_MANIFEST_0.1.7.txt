@@ -1,0 +1,40 @@
+Raider DNS release manifest
+===========================
+Application version: 0.1.7
+Windows file version: 0.1.7.0
+Product version: 0.1.7.0
+Author: Nima Zahedi
+Copyright: Copyright (C) 2026 Nima Zahedi
+Platform target: Windows 10/11 x64
+Framework: Python + PySide6 / Qt Widgets
+
+Primary user installer:
+  release/RaiderDNS_Setup_0.1.7_x64.exe
+
+Single-file app executable (installer input):
+  release/Raider DNS.exe
+
+Source archive (validated; 90 files):
+  RaiderDNS_PySide6_0.1.7.zip
+
+Optional installer component:
+  DNSCrypt Proxy v2.1.20, Windows x64, hash-pinned by installer/prepare_dnscrypt_proxy.ps1
+
+External engine:
+  sing-box is user-supplied and is not bundled.
+
+Visual requirements:
+  Plasma Stream retains 4 broad ribbons and 11 fine filaments.
+  Animation timer: 25 FPS; generated paths capped at 24 sample segments.
+
+Major stability changes:
+  - Hidden console startup for long-running sing-box TUN process; no CREATE_NO_WINDOW for that process.
+  - PID-specific, non-forced sing-box close request; app remains open if exit is not confirmed.
+  - Persistent exact-process session journal and startup recovery inspection.
+  - Active-process exit monitor and stale-session start guard.
+  - Application-owned bounded Qt worker pool.
+  - More defensive DNSCrypt process handle/timeout behavior.
+
+Validation: 193 automated tests collected; 192 passed; 1 optional Qt render test skipped. ZIP CRC, extracted-source compilation and extracted-source tests passed. SHA-256 is in RaiderDNS_PySide6_0.1.7_SHA256.txt.
+Live Windows TUN/WinTun driver lifecycle, routing cleanup, installer compilation, GUI frame rate, and real adapter DNS operation remain unverified in this build environment.
+Application license is not yet selected. Review LICENSE_STATUS.md and THIRD_PARTY_NOTICES.md before public binary redistribution.
