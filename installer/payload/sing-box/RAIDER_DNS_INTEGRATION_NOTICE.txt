@@ -1,0 +1,10 @@
+﻿Third-party component: sing-box
+Upstream: https://github.com/SagerNet/sing-box
+License: GPL-3.0-or-later with an additional upstream term.
+Binary SHA-256: 8f30682ee198855440d2a7fe070d5d3653793b2d01bb8c85eea88f93bbe7c8b9
+
+This is an independent integration. Raider DNS is not endorsed by or affiliated
+with the upstream sing-box project. The upstream LICENSE file is included in
+this directory and must be preserved. Review the upstream license and comply
+with all source-code, notice, redistribution and naming requirements before
+redistributing this installer.

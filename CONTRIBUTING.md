@@ -4,14 +4,14 @@ Thanks for helping improve Raider DNS. Changes should be small, reviewable, and 
 
 ## Before changing code
 
-- Read `README.md`, `RELEASE_AUDIT_0.1.7.md`, and the relevant changelog.
+- Read `README.md`, `RELEASE_NOTES.md`, `TEST_REPORT.md`, and `CHANGELOG.md`.
 - Avoid broad rewrites. Keep DNS mutation and recovery logic inside the service layer rather than duplicating PowerShell commands in UI code.
 - Do not silently weaken validation, transaction locking, recovery snapshots, adapter read-back, rollback, or DNSCrypt loopback checks.
 - Never add private network information, user configuration, activity logs, DNS recovery snapshots, credentials, or third-party executables to a commit.
 
 ## Development checks
 
-Run these commands from the `Source Code` directory:
+Run from the repository root:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -28,8 +28,3 @@ Any change to system DNS must include tests for successful read-back, partial fa
 ## Pull requests
 
 Describe the problem, the behavior change, tests run, platform limitations, and whether real Windows networking was exercised. Include screenshots for material UI changes. Never claim that mocked tests prove real adapter behavior.
-
-
-## Repository structure
-
-The repository landing page and policies live at the root. The actual app project is under `Source Code/`. Run development commands from that directory. The Windows CI workflow already sets this working directory.

@@ -1,0 +1,13 @@
+Raider DNS 0.2 beta — Installation notes
+Copyright © 2026 Nima Zahedi GitHub: Shattered-Devil
+
+Raider DNS manages Windows DNS settings and includes DNSCrypt Proxy and the sing-box TUN engine as required installer components.
+DNSCrypt Proxy and sing-box TUN are required installer components in this build; the installer does not offer a deselection option. Installing the files does NOT automatically start either engine or enable DNSCrypt/TUN. Each engine remains user-controlled from Raider DNS. Standard DNS, Windows-native DoH, and Windows-native DoT do not require either engine. The sing-box component is staged from the complete official Windows CLI distribution supplied by the maintainer at engines\sing-box\; the executable and upstream LICENSE are required, and companion files must be preserved. The user still needs a compatible sing-box JSON profile, DNS resolver configuration, and a working remote proxy endpoint. The app discovers the bundled executable automatically; no executable path is selected in the UI.
+
+The installer does not change adapter DNS settings during installation. Before
+uninstalling, open Raider DNS, restore the saved DNS settings, stop DNSCrypt Proxy
+only after confirming no adapter relies on loopback DNS, and gracefully stop any
+active sing-box TUN tunnel. If TUN shutdown cannot be confirmed, keep the app open
+and use Diagnostics rather than force-killing the engine.
+
+The application is copyrighted by Nima Zahedi. The application-level license has not yet been selected. See LICENSE_STATUS.md and the third-party notices for the separate licensing terms of bundled components. sing-box is GPL-3.0-or-later with an additional upstream term; preserve its upstream license and review its redistribution and naming requirements before publishing.

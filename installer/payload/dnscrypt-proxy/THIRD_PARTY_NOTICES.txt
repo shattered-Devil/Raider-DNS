@@ -1,0 +1,7 @@
+﻿DNSCrypt Proxy â€” third-party component
+Upstream: https://github.com/DNSCrypt/dnscrypt-proxy
+Version: 2.1.20
+Official Windows x64 archive: https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/2.1.20/dnscrypt-proxy-win64-2.1.20.zip
+Verified archive SHA-256: 9E498CB9BDBAE57756DB19CE516362AC307E9340A6996214964CFCC7C489ABC3
+
+This component is provided separately from Raider DNS and remains subject to the upstream project's license and notices. See LICENSE* files included in this directory. Do not remove upstream copyright/licensing notices when redistributing it.

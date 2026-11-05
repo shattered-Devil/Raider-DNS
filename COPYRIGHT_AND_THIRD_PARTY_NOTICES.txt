@@ -1,0 +1,100 @@
+RAIDER DNS — COPYRIGHT AND THIRD-PARTY NOTICES
+============================================================
+Application: Raider DNS
+Application version: 0.2.0-beta
+Author / copyright holder: Nima Zahedi (GitHub: Shattered-Devil)
+Copyright: Copyright © 2026 Nima Zahedi GitHub: Shattered-Devil
+
+APPLICATION COPYRIGHT AND LICENSE STATUS
+----------------------------------------
+The Raider DNS application source is copyrighted by Nima Zahedi (GitHub: Shattered-Devil).
+No application-level LICENSE file has been selected in this release.
+This notice does not grant permission to copy, modify, publish,
+redistribute, sublicense, or create derivative works of Raider DNS.
+The copyright holder must select and publish an explicit application
+license before the project is described as open source or reusable.
+
+The Windows executable's version resource is populated from
+installer/version_info.txt. It includes CompanyName, FileDescription,
+FileVersion, LegalCopyright, OriginalFilename, ProductName and
+ProductVersion. The application's About page also displays:
+Copyright © 2026 Nima Zahedi GitHub: Shattered-Devil.
+
+THIRD-PARTY COMPONENTS
+----------------------
+
+1. PySide6 / Qt for Python
+   Raider DNS uses PySide6 and Qt libraries. Qt for Python is offered
+   under LGPLv3/GPLv3 or commercial licensing, depending on the selected
+   distribution and modules. Some Qt modules are GPL-only. The exact
+   obligations depend on the Qt modules and binary files collected into
+   the final executable. Review the official license information:
+
+   https://doc.qt.io/qtforpython-6/licenses.html
+   https://doc.qt.io/qtforpython-6/commercial/index.html
+   https://doc.qt.io/Qt-6/licensing.html
+
+   Retain the applicable license texts and notices for every Qt/PySide
+   component actually included in the build. This summary is not a
+   substitute for those complete license texts or a compliance review.
+
+2. Python
+   The bundled Python runtime is distributed under the Python Software
+   Foundation License. Include the applicable Python license/copyright
+   notice from the exact Python version used to build the executable:
+
+   https://docs.python.org/3/license.html
+
+3. DNSCrypt Proxy
+   DNSCrypt Proxy is a separate external engine and is not embedded in
+   the single-file Raider DNS application EXE by this build script.
+   The Windows installer installs DNSCrypt Proxy v2.1.20 as a required
+   component. Installing the files does not start the engine. Preserve the upstream LICENSE and
+   THIRD_PARTY_NOTICES files in its installed engine directory.
+
+   Upstream: https://github.com/DNSCrypt/dnscrypt-proxy
+   License: ISC (verify and retain the license shipped with the exact
+   upstream release archive being redistributed).
+
+4. sing-box
+   The source archive does not include the sing-box binary. The Windows
+   installer installs it as a required component when the maintainer stages
+   the complete official Windows CLI package. Installing the files does not
+   start the engine or provide a proxy profile/server. Preserve the
+   upstream LICENSE and accompanying notices with the executable. Users still
+   supply their own compatible JSON profile and remote proxy service.
+
+   Upstream: https://github.com/SagerNet/sing-box
+   License: GPL-3.0-or-later with an additional upstream term. Review the exact
+   upstream license text and comply with all source, notice, redistribution,
+   and naming requirements before publishing an installer. Raider DNS is an
+   independent project and is not endorsed by the upstream project.
+
+5. PyInstaller
+   PyInstaller is a build-time tool. Its licensing and exception are
+   documented by the upstream project. The licenses of all collected
+   runtime dependencies still apply independently.
+
+   https://pyinstaller.org/en/stable/license.html
+
+REDISTRIBUTION CHECKLIST
+------------------------
+- Keep this notice and the full upstream license texts with the release.
+- Inspect the actual PyInstaller collection and enumerate every bundled
+  third-party component and license before public binary distribution.
+- Confirm Qt/PySide dynamic-library replacement and notice obligations
+  for the selected deployment format. A one-file bundle does not remove
+  those obligations.
+- Do not remove DNSCrypt Proxy's upstream license files from its payload.
+- Do not imply that Nima Zahedi owns the copyright to third-party code.
+- Do not describe Raider DNS as open source until an application license
+  has been selected and included by the copyright holder.
+
+This file is a maintainer-prepared notice summary, not legal advice and
+not a complete inventory generated from a final Windows binary. The
+final PyInstaller build must be inspected before release.
+
+
+sing-box (required installer component)
+Upstream: https://github.com/SagerNet/sing-box
+License: GPL-3.0-or-later with an additional upstream term. The complete upstream LICENSE and accompanying notices must be included with the component. See the included engines\sing-box\LICENSE file in the staged installer payload. Raider DNS is an independent project and is not endorsed by or affiliated with the upstream project. Do not remove upstream notices.

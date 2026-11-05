@@ -1,0 +1,47 @@
+Raider DNS v0.2 beta — Release Manifest
+Copyright © 2026 Nima Zahedi GitHub: Shattered-Devil
+
+Application version: 0.2.0-beta
+Windows file version: 0.2.0.0
+Product version: 0.2.0.0
+Source archive: RaiderDNS_PySide6_0.2_beta_release_safety_fix.zip
+Release classification: Beta source release candidate; Windows runtime validation required
+
+Current source/UI changes:
+- Removed the standalone Network Intelligence and Profiles navigation pages.
+- Consolidated network context and managed-engine state into Dashboard; reusable DNS profiles are managed in DNS Providers.
+- Removed adapter/Wi-Fi hardware inventory panels and separate visible Network Recovery panels.
+- Added Settings on/off switches with explicit checked-track, unchecked-track, knob and focus colors for all nine Raider DNS themes. The switch painter no longer inherits the operating system's default blue highlight.
+- Reapplies switch colors after the current theme stylesheet changes.
+- Persian language selection and right-to-left layout are retained.
+- Tooltip delay remains fixed at 750 ms and has no Settings control.
+- Engine Supervisor observes DNSCrypt Proxy and sing-box process state; it does not automatically restart or force-kill either engine.
+- Network recovery remains advisory and non-destructive inside Diagnostics.
+- Transactional Windows DNS changes, snapshots, read-back and rollback behavior are retained.
+
+Packaging:
+- PyInstaller one-file executable: release\Raider DNS.exe.
+- Windows version resource includes ProductName, FileVersion, ProductVersion and the full application copyright.
+- COPYRIGHT_AND_THIRD_PARTY_NOTICES.txt is embedded in the bundle and copied beside the EXE with LICENSE_STATUS.md and THIRD_PARTY_NOTICES.md.
+- DNSCrypt Proxy and sing-box are required Inno Setup components; neither is started or activated automatically by installation.
+- The source archive excludes the third-party sing-box binary. The maintainer must stage the complete official CLI package and preserve all upstream license/notice files before building the installer.
+- The source archive includes both supported installer routes: one-file application installer and onedir application installer.
+
+Validation:
+- Qt smoke-test render call uses QWidget.render(QPaintDevice) with QImage; widget cleanup is guaranteed in finally.
+- Added a static regression test preventing the invalid QWidget.render(QPainter) one-argument overload.
+- sing-box discovery regression fixed: frozen builds search only beside the packaged executable / PyInstaller extraction root; source-checkout discovery is used only for non-frozen runs.
+- Python source compilation passed.
+- 273 tests collected; 272 passed; 1 optional Qt-rendering test skipped because PySide6 GUI runtime is unavailable in this environment.
+- Fresh ZIP extraction, Python compilation, and all non-Qt tests passed from the final archive; ZIP integrity passed.
+- Actual Windows GUI/theme rendering, DPI scaling, UAC, adapter DNS changes, DNSCrypt, sing-box TUN routing/shutdown, Inno Setup compilation and install/upgrade/uninstall remain untested here and require Windows validation.
+
+Copyright:
+Copyright © 2026 Nima Zahedi GitHub: Shattered-Devil
+
+Packaging-safety follow-up:
+- Release-safety tests permit only the documented, Git-ignored local staging/build locations for external engine binaries and generated outputs, and check the Git index for already-tracked compiled binaries when run in a Git checkout.
+- Compiled binaries remain excluded from source archives and must not be committed to Git.
+
+- Release-safety tests allow local installer/build staging binaries only in `.gitignore`-covered locations, fixing false failures after the installer payload was staged.
+- Verified the reported DNSCrypt, sing-box DLL/EXE and PyInstaller output paths are permitted only in ignored staging directories.
