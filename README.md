@@ -36,8 +36,6 @@ The application also supports Windows-native DNS-over-HTTPS (DoH), Windows-nativ
 
 ## Screenshots
 
-> **Screenshot accuracy note:** The two application captures below are genuine Raider DNS screenshots from the earlier **v0.1.7** interface. They are included as historical UI references because updated v0.2 screenshots were not available when this README was prepared. The v0.2 interface has since been reorganized: the standalone Profiles and Network Intelligence pages were removed, the sing-box executable picker was removed, and the Connections/Settings UI was updated. Replace these two images with fresh v0.2 captures before treating them as current UI screenshots.
-
 ### Dashboard ( dark theme )
 
 <p align="center">
