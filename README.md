@@ -1,3 +1,40 @@
+<div align="center">
+  <img src="Assets/raider-dns-banner.svg" alt="Raider DNS" width="100%" />
+
+  # Raider DNS
+
+  **Windows DNS Management & Network Diagnostics**
+
+  [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D4?logo=windows)](https://www.microsoft.com/windows)
+  [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+  [![PySide6](https://img.shields.io/badge/UI-PySide6-41CD52?logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
+  [![Release](https://img.shields.io/badge/release-v0.1.7%20RC-orange)](https://github.com/shattered-Devil/Raider-DNS/releases)
+
+  [Download](https://github.com/shattered-Devil/Raider-DNS/releases) ·
+  [Features](#features) ·
+  [Security](#security--network-safety) ·
+  [Documentation](docs/) ·
+  [Issues](https://github.com/shattered-Devil/Raider-DNS/issues)
+</div>
+
+---
+## Application Screenshots
+
+### Dashboard
+![Raider DNS Dashboard](Assets/Screenshots/dashboard.png)
+
+### Connections
+![Raider DNS Connections](Assets/Screenshots/connections.png)
+## About
+
+**Raider DNS** is a Windows desktop application for managing DNS configuration, encrypted DNS transports, resolver performance, network diagnostics, and DNS recovery. It is built with Python and PySide6 / Qt Widgets.
+
+> **Current version:** `0.1.7` — Release Candidate  
+> **Maintainer / copyright:** Nima Zahedi · Copyright (C) 2026 Nima Zahedi  
+> **Target:** Windows 10/11 x64. Windows 11 is the recommended target.
+
+This repository follows the same public-release approach as the maintainer's Noble Password Manager project: the root README is the project landing page, `Source Code/` contains the application source, and `docs/` contains release and technical documentation.
+
 # Raider DNS v0.2 beta
 
 **Windows DNS management, encrypted DNS controls, resolver diagnostics and managed-engine supervision.**
