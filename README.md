@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Assets/Banner/raider_dns_banner.png" alt="Raider DNS — Windows DNS Management and Network Diagnostics" width="100%" />
+  <img src="Assets/raider_dns_banner.png" alt="Raider DNS — Windows DNS Management and Network Diagnostics" width="100%" />
 </p>
 
 <h1 align="center">Raider DNS</h1>
