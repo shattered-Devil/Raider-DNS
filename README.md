@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/app_icon.svg" alt="Raider DNS application icon" width="112" />
+  <img src="Assets/raider-dns-icon.ico" alt="Raider DNS application icon" width="112" />
 </p>
 
 <h1 align="center">Raider DNS</h1>
