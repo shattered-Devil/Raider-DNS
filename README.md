@@ -423,7 +423,6 @@ For ordinary bugs and feature requests, use [GitHub Issues](https://github.com/S
 - [`TEST_REPORT.md`](TEST_REPORT.md) — automated test coverage and known validation gaps.
 - [`SECURITY.md`](SECURITY.md) — security reporting and safe testing.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution guidance.
-- [`docs/NETWORK_REGION_PROFILES.md`](docs/NETWORK_REGION_PROFILES.md) — Global, Iran, and Restricted Network Mode behavior.
 
 ## Maintainer
 
