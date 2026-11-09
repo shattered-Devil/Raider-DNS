@@ -1,4 +1,12 @@
-# Raider DNS
+<p align="center">
+  <img src="Assets/raider_dns_banner.png" alt="Raider DNS — Windows DNS Management and Network Diagnostics" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/app_icon.svg" alt="Raider DNS application icon" width="112" />
+</p>
+
+<h1 align="center">Raider DNS</h1>
 
 <p align="center">
   <strong>Windows DNS Management · Encrypted DNS · Network Diagnostics · Traffic Tunneling</strong>
@@ -31,6 +39,20 @@ Built with **Python and PySide6**, Raider DNS brings together:
 - Regional verification rules and a separate Restricted Network Mode.
 
 > **Release status: 0.2 Beta.** Raider DNS can change machine-level network configuration and can manage optional DNS/TUN engines. Test DNS changes, adapter operations, encrypted transports, engine shutdown, and installer behavior in a disposable Windows 10/11 environment before relying on the application on a primary system. Automated source tests do not replace live Windows network validation.
+
+## Screenshots
+
+### Dashboard — Dark theme
+
+<p align="center">
+  <img src="Assets/Screenshots/dark-dashboard.png" alt="Raider DNS Dashboard in the dark theme" width="100%" />
+</p>
+
+### Dashboard — Warm Paper theme
+
+<p align="center">
+  <img src="Assets/Screenshots/warm-dashboard.png" alt="Raider DNS Dashboard in the warm paper theme" width="100%" />
+</p>
 
 ## What's new since 0.1.7
 
